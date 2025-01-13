@@ -68,8 +68,8 @@ New Terms
 PSW(Potential Spammed words)
 
 DB1 : Headers 
-ID	Email	            Content(TXT)	Content(HTML)	    PDF-ID	                                    Email-Header	                                Classification  PSW
-1	example@domain.com	Hi ! There	    <p>Hi ! There</p>	https://aws.amazon/hdhhsb/inv-836374.pdf	Delivered-To: lucifermorningstar25456@gmail.com	INB             na
+ID	Email	            Content(TXT)	Content(HTML)	    PDF-ID	                                    Email-Header	                                Classification  PSW sendingMethod
+1	example@domain.com	Hi ! There	    <p>Hi ! There</p>	https://aws.amazon/hdhhsb/inv-836374.pdf	Delivered-To: lucifermorningstar25456@gmail.com	INB             na  SMTP/API
 
 
 

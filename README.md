@@ -59,7 +59,17 @@ Docker service in case of emergency transport the ai to another hidden place or 
 One click setup
 ----------------------------------
 
+Dev-1
+Database Part
+Database 1(DB1) Stores all data (Exculding Ai Training Data)
+Database 2(DB2) Stores the main ai training data
 
+New Terms 
+PSW(Potential Spammed words)
+
+DB1 : Headers 
+ID	Email	            Content(TXT)	Content(HTML)	    PDF-ID	                                    Email-Header	                                Classification  PSW
+1	example@domain.com	Hi ! There	    <p>Hi ! There</p>	https://aws.amazon/hdhhsb/inv-836374.pdf	Delivered-To: lucifermorningstar25456@gmail.com	INB             na
 
 
 

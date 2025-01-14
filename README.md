@@ -77,13 +77,54 @@
 | 1  | example@domain.com  | Hi! There     | <p>Hi! There</p>   | https://aws.amazon/hdhhsb/inv-836374.pdf    | Delivered-To: lucifermorningstar25456@gmail.com | INB            | na  | SMTP/API       |
 
 
-
-Node dependency
+Date :- 15/02/2025
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+# contentGEN.js dependency
 html-pdf-node
 puppeteer
 pdf-lib
+
 Subprocess Command :- node script.js <action> <htmlSource> <outputPath>
-actions
+# actions
 html-to-pdf
 html-to-image
 html-to-imgpdf
+
+# Example Code of Python For Subprocess Commands for contentGEN.js
+
+import subprocess
+def execute_node_script(action, html_source, output_path):
+    """
+    Executes the Node.js script with the given parameters.
+    :param action: Action to perform (html-to-pdf, html-to-image, html-to-imgpdf)
+    :param html_source: Path to HTML file or HTML source code
+    :param output_path: Path to save the output file
+    """
+    try:
+        result = subprocess.run(
+            ['node', 'script.js', action, html_source, output_path],
+            text=True,
+            capture_output=True
+        )
+        print(result.stdout)
+        if result.stderr:
+            print('Error:', result.stderr)
+    except Exception as e:
+        print(f"Failed to execute Node.js script: {e}")
+
+# Example usage
+html_file_path = 'D:/Workspace/Work/INV-8938-89.html'  # Path to HTML file
+output_pdf_path = 'output.pdf'  # Path for PDF
+output_image_path = 'output.png'  # Path for image
+output_pdf_from_image_path = 'output-from-image.pdf'  # Path for image-to-PDF
+
+# Call Node.js script for each action
+execute_node_script('html-to-pdf', html_file_path, output_pdf_path)
+execute_node_script('html-to-image', html_file_path, output_image_path)
+execute_node_script('html-to-imgpdf', html_file_path, output_pdf_from_image_path)
+
+
+# sendEmail.js dependency
+nodemailer
+googleapis
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________

@@ -2,7 +2,7 @@
 
 ---
 
-### **Content Generation Module**  
+### **Content Generation Module(contentGEN.js)**  
 - **Input Formats:**  
   - HTML => [text, PDF, image]  
 

@@ -75,3 +75,15 @@
 | ID | Email               | Content (TXT) | Content (HTML)     | PDF-ID                                      | Email-Header                                | Classification | PSW | Sending Method |
 |----|---------------------|---------------|--------------------|---------------------------------------------|---------------------------------------------|----------------|-----|----------------|
 | 1  | example@domain.com  | Hi! There     | <p>Hi! There</p>   | https://aws.amazon/hdhhsb/inv-836374.pdf    | Delivered-To: lucifermorningstar25456@gmail.com | INB            | na  | SMTP/API       |
+
+
+
+Node dependency
+html-pdf-node
+puppeteer
+pdf-lib
+Subprocess Command :- node script.js <action> <htmlSource> <outputPath>
+actions
+html-to-pdf
+html-to-image
+html-to-imgpdf
